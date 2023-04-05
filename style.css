@@ -1,0 +1,25 @@
+/*styles for calc*/
+.calc {
+	max-width: 300px;
+	margin: auto;
+}
+.form-control {
+	margin-bottom: 20px;
+}
+.form-control:disabled {
+    background-color: #fff;
+}
+.calc-row {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	min-width: 40px;
+	margin: 0 5px;
+}
+/*form styles*/
+.form {
+	max-width: 100%;
+	width: 500px;
+}

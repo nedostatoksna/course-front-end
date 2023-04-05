@@ -1,0 +1,337 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Project
+	</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+	<nav class="d-flex justify-content-center">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+			 <a class="nav-link" href="#" data-tab="calc">Калькулятор</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab="acc">Форма создать аккаунт</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#" data-tab="surv">Опрос</a>
+		</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab="game">Крестики-нолики</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab="todo">Список дел</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#" data-tab="slider">Кастомный слайдер</a>
+			</li>
+		</ul>
+	</nav>	
+	</header>
+	<main>
+		<section class="container" data-tab="calc">
+			<h1 class="text-center pt-3">Калькулятор</h1>
+		</section>
+		<section class="container invisible" data-tab="acc">
+			<h1 class="text-center pt-3">Форма создать аккаунт</h1>
+		</section>
+		<section class="container invisible" data-tab="surv">
+			<h1 class="text-center pt-3">Опрос</h1>
+		</section>
+		<section class="container invisible" data-tab="game">
+			<h1 class="text-center pt-3">Крестики-нолики</h1>
+		</section>
+		<section class="container invisible" data-tab="todo">
+			<h1 class="text-center pt-3">Список дел</h1>
+		</section>
+		<section class="container invisible" data-tab="slider">
+			<h1 class="text-center pt-3">Кастомный слайдер</h1>
+		</section>
+
+	
+	</main>
+	<footer>
+		
+	</footer>
+	<script src="./js/tabs.js"></script>
+</body>	
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>project</title>
+</head>
+<body>
+
+  <nav class="pt-3">
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" data-tab="calc">calculator</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="acc">validation form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="surv">survey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="game">tic-tac-toe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="todo">to-do list</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="silder">custom slider</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="container" data-tab="calc">
+      <h1 class="pt-3 text-center">calculator</h1>
+		<div class="calc">
+			<input class="calc-field form-control" type="text" disabled>
+			<div class="calc-row">
+				<button class="btn btn-light btn-number">1</button>
+				<button class="btn btn-light btn-number">2</button>
+				<button class="btn btn-light btn-number">3</button>
+				<button class="btn btn-secondary btn-operator">+</button>
+			</div>
+			<div class="calc-row">
+				<button class="btn btn-light btn-number">4</button>
+				<button class="btn btn-light btn-number">5</button>
+				<button class="btn btn-light btn-number">6</button>
+				<button class="btn btn-secondary btn-operator">-</button>
+			</div>
+			<div class="calc-row">
+				<button class="btn btn-light btn-number">7</button>
+				<button class="btn btn-light btn-number">8</button>
+				<button class="btn btn-light btn-number">9</button>
+				<button class="btn btn-secondary btn-operator">*</button>
+			</div>
+			<div class="calc-row">
+				<button class="btn btn-danger btn-delete" >C</button>
+				<button class="btn btn-light btn-number">0</button>
+				<button class="btn btn-success btn-result">=</button>
+				<button class="btn btn-secondary btn-operator">/</button>
+			</div>
+		</div>
+    </section>
+
+    <section class="container d-none" data-tab="acc">
+      <h1 class="pt-3 text-center">validation form</h1>
+
+      <form class="form mx-auto">
+      	<div class="form-group">
+      		<label for="firstname">First Name</label>
+      		<input type="text" name="firstname" class="firstname form-control" id="firstname">
+      		<label for="lastname">Last Name</label>
+      		<input type="text" name="lastname" class="lastname form-control" id="lastname">
+      	</div>
+
+      	<div class="form-group">
+      		<label for="age">Age</label>
+      		<input type="text" name="age" class="age form-control" id="age">
+      		<label for="phone">Phone</label>
+      		<input type="text" name="phone" class="phone form-control" id="phone">
+      		<label for="email">Email</label>
+      		<input type="text" name="email" class="email form-control" id="email">
+      	</div>
+
+      	<div class="form-group">
+	      	<label>Предпочтительный способ контакта</label>
+	      	<div class="form-check">
+	       		<label class="form-check-label" for="option1">
+		      	<input type="radio" name="contact" class="contact-phone form-check-input" value="option1">
+		      	Phone
+		      	</label>
+		    </div>
+		    <div class="form-check">
+		      	<label class="form-check-label" for="option2">
+		      	<input type="radio" name="contact" class="contact-email form-check-input" value="option2">
+		      	Email
+		      	</label>
+		    </div>
+		    <div class="form-check">
+		      	<label class="form-check-label" for="option3">
+		      	<input type="radio" name="contact" class="contact-post form-check-input" value="option3">
+		      	Post
+		      	</label>
+		    </div>
+		    <div class="form-group mt-2 mb-3 d-none adress-box">
+		      	<label for="adress">Adress</label>
+		      	<input type="text" name="adress" class="adress form-control">
+		    </div>	
+      	</div>
+      	
+      	
+         	     	
+	    <div class="form-group">
+	    	<label>Выберите день рождения</label>
+		    <select class="day form-control">
+	      		<option value="1">1</option>
+	      		<option value="2">2</option>
+	      		<option value="3">3</option>
+	      		<option value="4">4</option>
+	      		<option value="5">5</option>
+	      		<option value="6">6</option>
+	      		<option value="7">7</option>
+	      		<option value="8">8</option>
+	      		<option value="9">9</option>
+	      		<option value="10">10</option>
+	      		<option value="11">11</option>
+	      		<option value="12">12</option>
+	      		<option value="13">13</option>
+	      		<option value="14">14</option>
+	      		<option value="15">15</option>
+	      		<option value="16">16</option>
+	      		<option value="17">17</option>
+	      		<option value="18">18</option>
+	      		<option value="19">19</option>
+	      		<option value="20">20</option>
+	      		<option value="21">21</option>
+	      		<option value="22">22</option>
+	      		<option value="23">23</option>
+	      		<option value="24">24</option>
+	      		<option value="25">25</option>
+	      		<option value="26">26</option>
+	      		<option value="27">27</option>
+	      		<option value="28">28</option>
+	      		<option value="29">29</option>
+	      		<option value="30">30</option>
+	      		<option value="31">31</option>
+	      	</select>	
+	    </div>
+      	
+      	<div class="form-group">
+      		<label>Выберите месяц рождения</label>
+	      	<select class="month form-control">
+	      		<option value="1">1</option>
+	      		<option value="2">2</option>
+	      		<option value="3">3</option>
+	      		<option value="4">4</option>
+	      		<option value="5">5</option>
+	      		<option value="6">6</option>
+	      		<option value="7">7</option>
+	      		<option value="8">8</option>
+	      		<option value="9">9</option>
+	      		<option value="10">10</option>
+	      		<option value="11">11</option>
+	      		<option value="12">12</option>
+	      	</select>	
+      	</div>
+      	
+      	<div class="form-group">
+      		<label for="password">Password</label>
+      		<input type="password" name="password" class="password form-control" id="password">
+      	</div>
+      	
+      	<div class="form-check">
+		  <input class="form-check-input personal-data" type="checkbox" value="" id="personal-data" checked>
+		  <label class="form-check-label" for="personal-data">
+		    Согласие на обработку данных	
+		  </label>
+		</div>
+
+		<div class="form-check">
+		  <input class="form-check-input notification" type="checkbox" value="" id="notification">
+		  <label class="form-check-label" for="notification">
+		    Получить уведомление о создании аккаунта
+		  </label>
+		</div>
+      	      	     	
+      	<button type="submit" class="btn btn-primary mt-5 mb-5 mx-auto d-block">Отправить</button>
+      </form>
+<!-- // форма с валидацией
+// Создаем аккаунт
+// 1. inputs
+
+// - поля для first и last name (обезятельно для заполнения)
+// - age (обезятельно для заполнения, только цифры, старше > 17)
+// - поле для номера телефона (только цифры)
+// - поле для email (есть @, есть . и минимум 8 символов)
+
+// radio button - предпочтительный способ контакта
+// 1 - телефон
+// 2 - email
+// 3 - обычной почтой (при выборе появляется обязательное поле адрес)
+
+// поле адреса (не пустое, если отжат radio button)
+
+// select и options для выбора даты рождения
+// день / месяц; год рассчитать в зависимости от age
+
+// const now = new Date();
+// console.log(now.getFullYear() - age)
+// const dateOfBirth = new Date(year, mouth, day);
+
+// ИЛИ
+// const validateEmail = (email) => {
+//   return String(email)
+//     .toLowerCase()
+//     .match( //возвращает получившиеся совпадения при сопоставлении строки с регулярным выражением
+//       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//     );
+// };
+
+// - поле для пароля (минимум шесть символов)
+// - два чекбокса 
+// 		1 - согласие на обработку данных (отжат)
+// 		2 - получить уведомление о создании аккаунта (нажат)
+
+// submit button 
+
+// после submit отобразить блок с данными пользователя ниже формы
+// если была отжата кнопка уведомление вызвать alert('Name surname, thanks for creating an account') -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    
+    <section class="container d-none" data-tab="surv">
+      <h1 class="pt-3 text-center">survey</h1>
+    </section>
+    
+    <section class="container d-none" data-tab="game">
+      <h1 class="pt-3 text-center">tic-tac-toe</h1>
+    </section>
+    
+    <section class="container d-none" data-tab="todo">
+      <h1 class="pt-3 text-center">task list</h1>
+    </section>
+    
+    <section class="container d-none" data-tab="silder">
+      <h1 class="pt-3 text-center">custom slider</h1>
+    </section>
+  </main>
+  <script src="./js/tabs.js"></script>
+   <script src="./js/calc.js"></script>
+   <script src="./js/form.js"></script>
+</body>
+</html>
