@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./scc/bootstrap.css">
+  <link rel="stylesheet" href="./scc/style.css">
+  <title>homework JSON + LocalStorage</title>
+</head>
+<body>
+	<main class="main">
+		<section class="container section" data-tab="counter">
+      <h1 class="pt-3 text-center">counter</h1>
+      <div class="counter-container">
+        <button class="btn plus"></button>
+        <input type="text" class="counter">
+        <button class="btn minus"></button>   
+      </div>
+    	<div class="btn-group counter-btns-wrapper">
+    		<button class="btn btn-light set-btn">save value</button>
+    		<button class="btn btn-light get-btn">get value by key</button>
+    		<button class="btn btn-light remove-btn">remove data by key</button>
+    		<button class="btn btn-light clear-btn">clear storage</button>
+    		<button class="btn btn-light show-key-btn">get key</button>
+    		<button class="btn btn-light show-length-btn">stored elements amount</button>
+   		</div>
+    </section>
+<br>
+    <section class="container section" data-tab="todo">
+      <h1 class="pt-3 text-center">task list</h1>
+      <div class="todo-wrapper">
+        <form class="todo-form">
+          <div class="form-group">
+            <label for="todo">Write a task</label>
+            <input type="text" class="form-control todo-input" id="todo">
+          </div>     
+        </form>
+        <div class="todo-list-wrapper">
+          <ul class="todo-list">
+          </ul> 
+        </div>
+        <div class="btns-wrapper">
+        	<button class="btn btn-light save-btn">save list</button>
+        	<button class="btn btn-light clear-storage">clear storage</button>
+        </div>  
+      </div>
+    </section>
+	</main>
+  <script src="./json-localstorage.js"></script>
+</body>
+</html>

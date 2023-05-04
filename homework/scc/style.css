@@ -1,0 +1,99 @@
+@font-face {
+  font-display: block;
+  font-family: 'Roboto_Condensed';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --light: #f8f9fa;
+  --red: #dc3545;
+  --gray-dark: #343a40;
+}
+
+.section h1 {
+  font-family: 'Roboto_Condensed';
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.main {
+  display: flex;
+}
+
+/*styles for to do list*/
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input {
+  max-width: 500px;
+}
+
+.todo-list {
+  max-width: 500px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-text {
+  display: block;
+  margin: 0 5px;
+}
+
+.delete-item {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url('../img/x-circle-fill.svg') center no-repeat;  
+  background-size: contain;
+  margin: 0 3px; 
+}
+
+.btns-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*styles for counter*/
+.plus {
+  background: url('../img/plus-square-fill.svg') center no-repeat;  
+  background-size: contain; 
+  height: 25px;
+  width: 25px;
+  margin: 0 5px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.minus {
+  background: url('../img/dash-square-fill.svg') center no-repeat;  
+  background-size: contain; 
+  height: 25px;
+  width: 25px;
+  margin: 0 5px;
+}
+.counter-btns-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+}
+
