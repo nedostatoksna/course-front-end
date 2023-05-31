@@ -8,14 +8,26 @@ const delayInput = document.querySelector('.delay__input');
 
 let timer;
 let delay = 1000;
+let timerStatusForReverse = "plus";
 
 let timerGo = function(event) {
-    timer = setTimeout(
-        function tick() {
-            timerDisplay.textContent++;
-            timer = setTimeout(tick, delay);
-        }, delay
-    );       
+    clearTimeout(timer);
+    if (timerStatusForReverse === "plus") {
+        timer = setTimeout(
+            function tick() {
+                Number(timerDisplay.textContent++);
+                timerStatusForReverse = "plus";
+                timer = setTimeout(tick, delay);
+            }, delay
+        );           
+    } else if (timerStatusForReverse === "minus") {
+        timer = setTimeout(
+            function tick() {
+                Number(timerDisplay.textContent--);
+                timer = setTimeout(tick, delay);
+            }, delay
+        );             
+    }      
 };
 
 let stopTimer = function(event) {
@@ -25,14 +37,13 @@ let stopTimer = function(event) {
 
 let reverseTimer = function(event) {
     clearTimeout(timer);
-    timer = setTimeout(
-        function tick() {
-            if (timerDisplay.textContent > 0 ) {
-                timerDisplay.textContent--;
-                timer = setTimeout(tick, delay);        
-            }
-        }, delay
-    );  
+    if (timerStatusForReverse === "plus") {
+        timerStatusForReverse = "minus";
+        timerGo();      
+    } else if (timerStatusForReverse === "minus") {
+        timerStatusForReverse = "plus";  
+        timerGo();      
+    }
 };
 
 timerPlay.addEventListener("click", timerGo);
@@ -40,4 +51,4 @@ timerPause.addEventListener("click", () =>  clearTimeout(timer));
 timerReset.addEventListener("click", () => timerDisplay.textContent = 0);
 timerStop.addEventListener("click", stopTimer);
 timerReverse.addEventListener("click", reverseTimer);
-delayInput.addEventListener("change", () => delay = delayInput.value);
+delayInput.addEventListener("change", () => delay = Number(delayInput.value));
