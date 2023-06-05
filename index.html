@@ -33,6 +33,9 @@
       <li class="nav-item">
         <a class="nav-link active" href="#" data-tab="counter">counter</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#" data-tab="timer">timer</a>
+      </li>
     </ul>
   </nav>
 
@@ -40,7 +43,7 @@
     <section class="container section d-none" data-tab="calc">
       <h1 class="pt-3 text-center">calculator</h1>
       <div class="calc">
-        <input type="text" class="form-control calc-field" disabled>
+        <input type="text" class="form-control calc-field" id="calc-field" disabled>
         <div class="calc-row">
           <button class="btn calc-btn btn-outline-secondary btn-number">1</button>
           <button class="btn calc-btn btn-outline-secondary btn-number">2</button>
@@ -77,47 +80,47 @@
           <div class="form-row mb-2">
             <div class="form-group col-md-6">
               <label for="first-name">first name</label>
-              <input type="text" class="form-control form-sq first-name" name="firstName" placeholder="">
+              <input type="text" class="form-control form-sq first-name" name="firstName" id="first-name" placeholder="">
             </div>
             <div class="form-group col-md-6">
               <label for="last-name">last name</label>
-              <input type="text" class="form-control form-sq last-name" name="lastName" placeholder="">
+              <input type="text" class="form-control form-sq last-name" name="lastName" id="last-name" placeholder="">
             </div>
           </div>
 
           <div class="form-row mb-2">
             <div class="form-group col-md-2">
               <label for="age">age</label>
-              <input type="text" class="form-control form-sq age" name="age" placeholder="18+">
+              <input type="text" class="form-control form-sq age" name="age" id="age" placeholder="18+">
             </div>
             <div class="form-group col-md-4">
               <label for="phone">phone</label>
-              <input type="text" class="form-control form-sq phone" name="phone" placeholder="042 123456789">
+              <input type="text" class="form-control form-sq phone" name="phone" id="phone" placeholder="042 123456789">
             </div>
             <div class="form-group col-md-6">
               <label for="email">email</label>
-              <input type="text" class="form-control form-sq email" name="email" placeholder="name@mail.com">
+              <input type="text" class="form-control form-sq email" name="email" id="email" placeholder="name@mail.com">
             </div>
           </div>
 
           <div class="form-group contact-group mb-4">
             <label>prefered&nbsp;contact&nbsp;&nbsp;</label>
             <div class="form-check form-check-inline">
-              <input class="form-check-input contact-phone" type="radio" name="contact" value="option1">
+              <input class="form-check-input contact-phone" type="radio" name="contact" id="option1" value="option1">
               <label class="form-check-label" for="option1">phone</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input contact-email" type="radio" name="contact" value="option2">
+              <input class="form-check-input contact-email" type="radio" name="contact" id="option2" value="option2">
               <label class="form-check-label" for="option2">email</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input contact-post" type="radio" name="contact" value="option3">
+              <input class="form-check-input contact-post" type="radio" name="contact" id="option3" value="option3">
               <label class="form-check-label" for="option3">post</label>
             </div>
 
             <div class="form-group mt-3 d-none">
               <label for="address">address</label>
-              <input type="text" name="address" class="form-control form-sq contact-address">
+              <input type="text" name="address" id="address" class="form-control form-sq contact-address">
             </div>
           </div>
 
@@ -181,12 +184,12 @@
           <div class="form-row password-group mt-4">
             <div class="form-group col-md-6">
               <label for="password">password</label>
-              <input type="password" name="password" class="form-control form-sq password">
+              <input type="password" name="password" id="password" class="form-control form-sq password">
               <i class="eye fa-solid fa-eye"></i>
             </div>
             <div class="form-group col-md-6">
               <label for="repeat-password">repeat password</label>
-              <input type="password" name="repeat-password" class="form-control form-sq repeat-password">
+              <input type="password" name="repeat-password" id="repeat-password" class="form-control form-sq repeat-password">
               <i class="eye fa-solid fa-eye"></i>
             </div>
           </div>
@@ -358,8 +361,23 @@
       <h1 class="pt-3 text-center">counter</h1>
       <div class="counter-container">
         <button class="btn plus"></button>
-        <input type="text" class="counter">
+        <input type="text" class="counter" id="counter">
         <button class="btn minus"></button>   
+      </div>
+    </section>
+
+    <section class="container section d-none" data-tab="timer">
+      <h1 class="pt-3 text-center">timer</h1>
+		<div class="timer__display">0</div>
+		<div class="timer__buttons">
+			<button class="timer__play">Play</button>
+			<button class="timer__pause">Pause</button>
+			<button class="timer__reset">Reset</button>
+			<button class="timer__stop">Stop</button>
+      <button class="timer__reverse">Reverse</button>
+		</div>
+      <div>
+        <input type="number" class="delay__input" placeholder="Enter delay time.." id="delay__input">
       </div>
     </section>
 
@@ -373,6 +391,6 @@
   <script src="./js/todo.js"></script>
   <script src="./js/counter.js"></script>
   <script src="./js/slider.js"></script>
-
+  <script src="./js/timer.js"></script>
 </body>
 </html>
