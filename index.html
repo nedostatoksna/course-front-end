@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="./img/site-logo.ico">
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width">
+	 <link rel="stylesheet" type="text/css" href="./styles/style.css">
+	 <title>html-css-js-final-project</title>
+</head>
+	<body class="body">
+			<header class="header">
+				<div class="container">
+					<nav class ="nav">
+						<div class="logo-wrapper">
+							<a href="#" class="site-logo">
+								<img src="./img/site-logo.svg" alt="logo" class="site-logo">
+							</a>
+							<h1 class="logo-text desktop">CryptoSale</h1>
+						</div>
+						<div class="nav-links-wrapper">
+							<a href="#" class="nav-link">Home</a>
+							<a href="#" class="nav-link">Tariffs</a>
+							<a href="#" class="nav-link">Reviews</a>
+							<a href="#" class="nav-link">Rules</a>
+							<a href="#" class="nav-link">FAQ</a>
+							<a href="#" class="nav-link">For partners</a>
+							<a href="#" class="nav-link">Contacts</a>
+						</div>
+						<div class="user-options">
+							<button class="sign-up-btn">Sign Up</button>
+							<button class="log-in-btn">Log in</button>
+						</div>
+						<div class="burger-btn burger-btn-wrapper">
+							<div class="burger-btn"></div>
+							<div class="burger-btn"></div>
+							<div class="burger-btn"></div>
+						</div>
+						<div class="dropdown-background"> 
+								<div class="dropdown-content">
+									<span class="close-dropdown">
+										<img src="./img/cross-dropdown.svg" class="close">
+									</span>
+									<div class="menu-container">
+										<div class="dropdown-nav">
+											<h1 class="dropdown-header">
+												<img src="./img/log-in-icon.svg" class="">
+												Log in
+											</h1>
+											<a href="#" class="dropdown-nav-link nav-link">Home</a>
+											<a href="#" class="dropdown-nav-link nav-link">Tariffs</a>
+											<a href="#" class="dropdown-nav-link nav-link">Reviews</a>
+											<a href="#" class="dropdown-nav-link nav-link">Rules</a>
+											<a href="#" class="dropdown-nav-link nav-link">FAQ</a>
+											<a href="#" class="dropdown-nav-link nav-link">For partners</a>
+											<a href="#" class="dropdown-nav-link nav-link">Contacts</a>
+										</div>
+										<input type="text" placeholder="Search.." class="dropdown-search" name="search">
+									</div>
+								</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main class="main">
+				<div class="modal-background">
+					<div class="modal">
+						<span class="close-dropdown">
+							<img src="./img/cross-dropdown.svg" class="close">
+						</span>
+						<div class="modal-window modal-transaction hidden">
+							<div class="modal-text">
+								Your money
+								<br>
+								has been exchanged.
+							</div>
+							<div class="modal-text">
+								Thank you
+								<br>
+								for using our service!
+							</div>
+						</div>
+						<div class="modal-window modal-demonstration-only hidden">
+							<div class="modal-text">
+								This part of the interface
+								<br>
+								is for demonstration
+								<br>
+								purposes only.
+							</div>
+							<div class="modal-text">
+								Better try to change
+								<br>
+								the currency!
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="promo-box">
+					<div class="container promo">
+						<div class="content-box">
+							<h1 class="promo-header">
+								Currency Exchange
+								<br>
+								fast & safe
+							</h1>
+							<h2 class="promo-subheader">No extra fee. Account replenishment no longer than 15 minutes</h2>
+							<form class="main-form">
+								<div class="inputs-container">
+									<div class="amount-inputs-wrapper">
+										<label class="input-wrapper" for="amount-input">
+											You give
+											<input type="text" placeholder="Amount" class="amount-input give" id="amount-input">
+										</label>
+										<label class="input-wrapper input-wrapper-mr-14" for="give-currency-input">
+											<select class="give-currency select" id="give-currency-input">
+												<option value="placeholder" class="currency-placeholder">Choose the currency</option>
+												<option value="usd" class="currency-option">USD</option>
+												<option value="eur" class="currency-option">EUR</option>
+												<option value="rub" class="currency-option">RUB</option>
+												<option value="eth" class="currency-option">ETH</option>
+												<option value="jpy" class="currency-option">JPY</option>
+											</select>
+										</label>
+									</div>
+									<button class="swap-btn">
+										<img src="./img/icons.svg" class="swap-btn-img desktop">
+										<img src="./img/icon-mobile.svg" class="swap-btn-img mobile">
+									</button>
+									<div class="currency-inputs-wrapper">
+										<label class="input-wrapper input-wrapper-mr-6" for="receive-input">
+											You receive
+											<input type="text" placeholder="999 999 999" class="amount-input receive" id="receive-input">
+										</label>
+										<label class="input-wrapper" for="receive-currency-input">
+											<select class="give-currency select" id="receive-currency-input">
+												<option value="placeholder" class="currency-placeholder">Choose the currency</option>
+												<option value="usd" class="currency-option">USD</option>
+												<option value="eur" class="currency-option">EUR</option>
+												<option value="rub" class="currency-option">RUB</option>
+												<option value="eth" class="currency-option">ETH</option>
+												<option value="jpy" class="currency-option">JPY</option>
+											</select>
+										</label>
+									</div>
+								</div>
+								<div class="rate-comm-wrapper">
+									<div  class="rate-wrapper">
+										Rate
+										<p class="rate">1 <span class="currency">RUB </span>= 0.0001 <span class="currency">USD </span></p>
+									</div>
+									<div  class="commission-wrapper">
+										Commission - 1% 
+										<p class="commission">21.27498619 <span class="currency">BCH </span></p>
+									</div>
+								</div>
+								<div class="complete-exchange-wrapper">
+									<button class="exchange">Exchange</button>
+									<div class="input-agreement-container">
+										<input class="input-agreement d-none" type="checkbox" name="agreement" id="agreement">
+										<label class="agreement-label" for="agreement"></label>
+										I agree with 
+										<a href="#" class="rules-and-statements">Rules and statements</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="illustration-wrapper">
+							<img src="./img/page-illustration.svg" class="main-illustration" alt="illustration">
+							<div class="backdrop"></div>
+						</div>
+					</div>
+				</section>
+				<section class="latest-applications">
+					<div class="container latest-applications-content">
+							<h1 class="latest-applications-header">Latest applications</h1>
+							<div class="applications-cards-wrapper">
+								<article class="application-card application-card-top-layer active-card" data-id="slide-1">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<p class="transaction-details">0.056600935<span class="transaction-currency">USD</span></p>
+										<div class="transaction-icon"><img src="./img/trans-icon.svg" alt="
+											two parallel arrows pointing in opposite directions"></div>
+										<p class="transaction-details">102 509.36<span class="transaction-currency">RUB</span></p>
+									</div>
+								</article>
+								<article class="application-card application-card-top-layer" data-id="slide-2">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<p class="transaction-details">0.56600935<span class="transaction-currency">ETH</span></p>
+										<div class="transaction-icon"><img src="./img/trans-icon.svg" alt="
+											two parallel arrows pointing in opposite directions"></div>
+										<p class="transaction-details">756 600 935<span class="transaction-currency">RUB</span></p>
+									</div>
+								</article>
+								<article class="application-card application-card-bottom-layer" data-id="slide-3">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<p class="transaction-details">54 000<span class="transaction-currency">JPY</span></p>
+										<div class="transaction-icon"><img src="./img/trans-icon.svg" alt="
+											two parallel arrows pointing in opposite directions"></div>
+										<p class="transaction-details">0.56600935<span class="transaction-currency">USD</span></p>
+									</div>
+								</article>
+								<article class="application-card application-card-bottom-layer" data-id="slide-4">
+									<h2 class="transaction-date">28.07.2020, 12:36</h2>
+									<div class="application-card-content">
+										<p class="transaction-details">105 660.09<span class="transaction-currency">RUB</span></p>
+										<div class="transaction-icon"><img src="./img/trans-icon.svg" alt="
+											two parallel arrows pointing in opposite directions"></div>
+										<p class="transaction-details">1.50936<span class="transaction-currency">ETH</span></p>
+									</div>
+								</article>
+							</div>
+							<div class="mobile">
+								<div class="slider-btns-wrapper">
+									<label class="slide-label" for="slide-1">
+										<input class="slider-radio" type="radio" name="slide" value="slide1" id="slide-1" checked>
+										<span class="slide"></span>
+									</label>
+									<label class="slide-label" for="slide-2">
+										<input class="slider-radio d-none" type="radio" name="slide" value="slide1" id="slide-2">
+										<span class="slide"></span>
+									</label>
+									<label class="slide-label" for="slide-3">
+										<input class="slider-radio d-none" type="radio" name="slide" value="slide1" id="slide-3">
+										<span class="slide"></span>
+									</label>
+									<label class="slide-label" for="slide-4">
+										<input class="slider-radio d-none" type="radio" name="slide" value="slide1" id="slide-4">
+										<span class="slide"></span>
+									</label>
+								</div>
+							</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="desktop">
+					<div class="container footer-content">
+						<div class="copyright-wrapper footer-box">
+							<div class="footer-logo-container">
+								<a href="#" class="footer-site-logo"><img src="./img/site-logo.svg" alt="logo"></a>
+								<div class="footer-logo-text">
+									CryptoSale
+								</div> 
+							</div>
+							<div class="copyright">
+								<div class="copcopyright-icon">
+									<img src="./img/copyright.svg" alt="copcopyright icon">
+								</div>
+								2021, cryptosale.net
+								<br>
+								All rights reserved
+							</div>
+						</div>
+						<div class="popular-directions-container footer-box">
+							<div class="popular-directions-header">
+								Popular directions of exchange
+							</div>
+							<ul class="popular-directions-list">
+								<li>Exchange Bitcoin to Qiwi</li>
+								<li>Exchange Sber to Bitcoin</li>
+								<li> Ether to Sber</li>
+								<li>Exchange Ether to Tinkoff</li>
+							</ul> 
+						</div>
+						<div class="footer-nav footer-box">
+							<a href="#" class="footer-nav-link nav-link">Tariffs</a>
+							<a href="#" class="footer-nav-link nav-link">Reviews</a>
+							<a href="#" class="footer-nav-link nav-link">Rules</a>
+							<a href="#" class="footer-nav-link nav-link">FAQ</a>
+						</div>
+						<div class="footer-nav footer-box">
+							<a href="#" class="footer-nav-link nav-link">For partners</a>
+							<a href="#" class="footer-nav-link nav-link">Policy</a>
+							<a href="#" class="footer-nav-link nav-link">Contacts</a>
+						</div>
+						<div class="footer-user-options">
+							<button class="sign-up-btn">Sign Up</button>
+							<button class="log-in-btn-footer">Log in</button>
+						</div>
+
+
+					</div>
+						
+				
+				</div>
+					<div class="mobile">
+						<div class="container footer-content">
+							<div class="copyright-wrapper footer-box">
+								<div class="footer-logo-container">
+									<a href="#" class="footer-site-logo"><img src="./img/site-logo.svg" alt="logo"></a>
+									<div class="footer-logo-text">
+										CryptoSale
+									</div> 
+								</div>
+								<div class="copyright">
+									<div class="copcopyright-icon">
+										<img src="./img/copyright.svg" alt="copcopyright icon">
+									</div>
+									2021, cryptosale.net
+									<br>
+									All rights reserved
+								</div>
+							</div>
+							<div class="footer-user-options">
+								<button class="sign-up-btn">Sign Up</button>
+								<button class="log-in-btn-footer">Log in</button>
+							</div>
+							<div class="popular-directions-container footer-box">
+								<div class="popular-directions-header">
+									Popular directions of exchange
+								</div>
+								<ul class="popular-directions-list">
+									<li>Exchange Bitcoin to Qiwi</li>
+									<li>Exchange Sber to Bitcoin</li>
+									<li> Ether to Sber</li>
+									<li>Exchange Ether to Tinkoff</li>
+								</ul> 
+							</div>
+							<div class="footer-nav footer-box">
+								<a href="#" class="footer-nav-link">Tariffs</a>
+								<a href="#" class="footer-nav-link">Reviews</a>
+								<a href="#" class="footer-nav-link">Rules</a>
+								<a href="#" class="footer-nav-link">FAQ</a>
+							</div>
+							<div class="footer-nav footer-box">
+								<a href="#" class="footer-nav-link">For partners</a>
+								<a href="#" class="footer-nav-link">Policy</a>
+								<a href="#" class="footer-nav-link">Contacts</a>
+							</div>
+	
+
+						</div>
+					
+					</div>
+					
+			</footer>
+			<script src="./js/modal.js"></script>
+			<script src="./js/dropdown.js"></script>
+			<script src="./js/slider.js"></script>
+			<script src="./js/exchange.js"></script>
+    </body>
+</html>
